@@ -1,0 +1,15 @@
+{
+	"id": "start",
+	"question": "Is your computer running Windows 7, 8, or 8.1?",
+	"answers": [
+
+		{
+			"text": "Yes",
+			"target": "dtn1"
+		},
+		{
+			"text": "No",
+			"target": "dtn2"
+		}
+	]
+}

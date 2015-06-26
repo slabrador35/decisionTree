@@ -1,0 +1,15 @@
+{
+	"id": "dtn3",
+	"question": "Was Windows 10 installed over a valid Windows 7, 8 or 8.1 license?",
+	"answers": [
+
+		{
+			"text": "Yes",
+			"target": "anode1"
+		},
+		{
+			"text": "No",
+			"target": "anode2"
+		}
+	]
+}

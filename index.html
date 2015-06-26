@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Decision Tree Demo</title>
+
+	<link rel="stylesheet" href="css/decisionTree.css">
+
+  </head>
+  <body>
+
+    <h1>decisionTree Demo</h1>
+
+	<p>This demo page provides a basic setup for decisionTree. Copy / unzip the entire <em>decisionTree</em> directory to a web server and you'll have the basic example up and running. See the <a href="http://www.dbswebdev.com/decision-tree-documentation.php" target="_blank">full documentation</a> for implementation and configuration options.</p>
+
+	<div class="decisionTree" aria-live="polite" aria-relevant="additions">
+
+	  <p class="cta"><a href="#" role="button" data-start-node="start">Will you get a free upgrade to Windows 10?</a></p>
+
+    </div>
+
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.decisionTree.min.js"></script>
+	<script>
+	  $( document ).ready(function() {
+	    $(".decisionTree").decisionTree();
+	  });
+    </script>
+  </body>
+</html>

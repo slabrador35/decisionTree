@@ -1,0 +1,19 @@
+{
+	"id": "dtn2",
+	"question": "Is your computer running the Windows 10 Preview?",
+	"answers": [
+
+		{
+			"text": "Yes",
+			"target": "dtn3"
+		},
+		{
+			"text": "No, I'm running Vista",
+			"target": "anode2"
+		},
+		{
+			"text": "No, I'm running XP",
+			"target": "anode2"
+		}
+	]
+}

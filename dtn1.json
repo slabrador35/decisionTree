@@ -1,0 +1,15 @@
+{
+	"id": "dtn1",
+	"question": "Is your copy of Windows genuine?",
+	"answers": [
+
+		{
+			"text": "Yes",
+			"target": "anode1"
+		},
+		{
+			"text": "No",
+			"target": "anode2"
+		}
+	]
+}

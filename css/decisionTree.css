@@ -1,0 +1,207 @@
+/*
+ * Basic styles for the demo page - remove these before starting your customisations!
+ */
+
+body {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	margin:18px 18%;}
+
+/*
+ * Decision tree styles - customise these as you need
+ */
+
+.cta {
+	text-align:center;
+	background: linear-gradient(25deg, #fff, #ccc);
+	padding:20px 0;
+	border:1px solid #ccc;
+	border-radius:2px;}
+
+.cta a {
+	text-decoration:none;
+	font-weight:700;
+	color:#000;}
+
+#decision-tree-loading {
+	position:fixed;
+	width:20em;
+	top:14%;
+	left:50%;
+	margin-left:-10em;
+	text-align:center;
+	border:1px solid #03152d;
+	border-radius:3px;
+	background-color: #fff;
+	opacity:.96;
+	z-index:200;
+	display:none;}
+
+#decision-tree-loading > p {
+	display: inline-block;
+	opacity:1;
+	line-height:2;
+	font-weight:700;}
+
+#decision-tree-loading > p img {
+	margin-top:8px;}
+
+.decisionTree {
+	margin-bottom:80px;}
+
+.dtNode {
+	clear: both;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-radius:3px;
+	padding:6px 18px;
+	margin:6px 0 0 6px;
+	-moz-animation-duration:3s;
+    -webkit-animation-duration:3s;
+    -ms-animation-duration:3s;
+	-o-animation-duration:3s;
+	animation-duration:3s;
+	-moz-animation-name:showNode;
+    -webkit-animation-name:showNode;
+	-ms-animation-name:showNode;
+	-o-animation-name:showNode;
+	animation-name:showNode;
+}
+
+@-moz-keyframes showNode {
+  0% {
+    -moz-transform: rotateX(90deg);
+	-webkit-transform: rotateX(90deg);
+	-ms-transform: rotateX(90deg);
+	-o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+  100% {
+    -moz-transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+@-webkit-keyframes showNode {
+  0% {
+    -moz-transform: rotateX(90deg);
+	-webkit-transform: rotateX(90deg);
+	-ms-transform: rotateX(90deg);
+	-o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+  100% {
+    -moz-transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+@-ms-keyframes showNode {
+  0% {
+    -moz-transform: rotateX(90deg);
+	-webkit-transform: rotateX(90deg);
+	-ms-transform: rotateX(90deg);
+	-o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+  100% {
+    -moz-transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+@-o-keyframes showNode {
+  0% {
+    -moz-transform: rotateX(90deg);
+	-webkit-transform: rotateX(90deg);
+	-ms-transform: rotateX(90deg);
+	-o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+  100% {
+    -moz-transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+@keyframes showNode {
+  0% {
+    -moz-transform: rotateX(90deg);
+	-webkit-transform: rotateX(90deg);
+	-ms-transform: rotateX(90deg);
+	-o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+  100% {
+    -moz-transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+
+.dtNode img {
+	float: left;
+	margin:0 8px 8px 0;
+	height:100%;
+	width:auto;}
+
+.dtNode.answerNode {
+	border:3px solid #000;}
+
+.dtNode.active {
+	border-color:#000;}
+
+.dtNode.done {
+	margin-top:32px;}
+
+.dtNode.done:before {
+	content:'';
+	display:block;
+	height:20px;
+	margin-top:-28px;
+	background: url(/decisionTree/img/done.png) 50% 0 no-repeat;
+	z-index:-10;}
+
+.dtNode ul li a {
+	font-weight:700;
+	text-decoration:none;}
+
+.dtNode ul li.ticked a {
+	font-weight:900;
+	color:#000;
+	text-decoration:underline;}
+
+.dtNode ul {
+    padding:12px 0 0 0;
+	-moz-column-count: 2;
+    -moz-column-gap: 4em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 4em;
+     column-count: 2;
+     column-gap: 4em;
+}
+
+.dtNode ul li {
+	margin:0 0 12px 0;
+	padding-left:18px;
+	list-style-type:none;
+	-webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;}
+
+.dtNode ul li:before {
+	content:"\00bb";
+	font-size:120%;
+	margin-right:4px;}
+
+.dtNode ul li.ticked:before {
+	content:"\2713";
